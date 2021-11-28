@@ -1,10 +1,15 @@
-package MovelViewController;
+package br.com.mlfr.calculadora.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.http.WebSocket.Listener;
 
 import javax.swing.Action;
+
+import br.com.mlfr.calculadora.modelo.*;
+import br.com.mlfr.calculadora.view.CalculatorView;
+import br.com.mlfr.calculadora.*;
+import br.com.mlfr.calculadora.controller.*;
 
 public class CalculatorController {
 

@@ -1,4 +1,4 @@
-package MovelViewController;
+package br.com.mlfr.calculadora.view;
 //Tudo o que a view faz é tomar conta do que está sendo visto. Não excede isto. 
 
 import java.awt.event.ActionListener;
@@ -13,7 +13,7 @@ public class CalculatorView extends JFrame {
 	private JTextField calcSolution = new JTextField(10);
 	
 	
-	CalculatorView(){
+	public CalculatorView(){
 		JPanel calcPanel = new JPanel();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(600, 200);
@@ -32,7 +32,7 @@ public class CalculatorView extends JFrame {
 		return Integer.parseInt(firstNumber.getText());
 	}
 	public int getSecondNumber() {
-		return Integer.parseInt(firstNumber.getText());
+		return Integer.parseInt(secondNumber.getText());
 	}
 	public int calcSolution() {
 		return Integer.parseInt(calcSolution.getText());
@@ -42,11 +42,11 @@ public class CalculatorView extends JFrame {
 		calcSolution.setText(Integer.toString(solution));
 	}
 	
-	void addCalculateListener(ActionListener listenForCalcButton) {
+	public void addCalculateListener(ActionListener listenForCalcButton) {
 		calculateButton.addActionListener(listenForCalcButton);
 	}
 	
-	void displayErrorMessage(String errorMessage) {
+	public void displayErrorMessage(String errorMessage) {
 		JOptionPane.showMessageDialog(this, errorMessage);
 	}
 }

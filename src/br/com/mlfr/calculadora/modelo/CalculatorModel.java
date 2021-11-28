@@ -1,4 +1,4 @@
-package MovelViewController;
+package br.com.mlfr.calculadora.modelo;
 
 //O modelo performa todos os calculos necessários. Não tem conhecimento da existência da view.
 //O mdoelo permite o acesso aos dados
